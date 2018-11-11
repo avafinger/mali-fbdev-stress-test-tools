@@ -1,0 +1,38 @@
+Source: glmark2
+Section: misc
+Priority: optional
+Maintainer: Alexander Finger <alex.mobigo@gmail.com>
+XSBC-Original-Maintainer: Alexandros Frantzis <alexandros.frantzis@linaro.org>
+Build-Depends: debhelper (>= 9),
+               python (>= 2.4),
+               pkg-config,
+               libjpeg-dev,
+               libpng-dev,
+               libgl1-mesa-dev | libgl1-dev,
+               libegl1-mesa-dev | libegl1-x11-dev,
+               libgles2-mesa-dev | libgles2-dev,
+Standards-Version: 3.9.6
+Homepage: https://launchpad.net/glmark2
+
+Package: glmark2-es2-fbdev
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         glmark2-data (= ${source:Version})
+Description: OpenGL ES 2.0 Mali fbdev benchmark
+ A benchmark for OpenGL (ES) 2.0 that uses only the OpenGL ES 2.0 compatible
+ API. It contains tests for standard OpenGL (ES) 2.0 features, such as vertex
+ arrays, VBOs, texturing and shaders.
+ .
+ This package contains the OpenGL ES 2.0 variant of the benchmark for mali
+ fbdev.
+
+Package: glmark2-data
+Architecture: all
+Depends: ${misc:Depends}
+Description: data files for the glmark2 OpenGL (ES) 2.0 benchmark
+ A benchmark for OpenGL (ES) 2.0 that uses only the OpenGL ES 2.0 compatible
+ API. It contains tests for standard OpenGL (ES) 2.0 features, such as vertex
+ arrays, VBOs, texturing and shaders.
+ .
+ This package contains the data files used by the glmark2 benchmark.

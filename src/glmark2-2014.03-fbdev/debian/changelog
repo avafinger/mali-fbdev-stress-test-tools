@@ -1,0 +1,152 @@
+glmark2 (2014.03+git20150611.fa71af2d-0ubuntu5) bionic; urgency=low
+
+  * Ported to Mali fbdev
+
+ -- Alexander Finger <alex.mobigo@gmail.com>  Sun, 11 Nov 2018 15:00:00 +0300
+
+glmark2 (2014.03+git20150611.fa71af2d-0ubuntu4) yakkety; urgency=medium
+
+  * Switch to libpng-dev from libpng12-dev
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 22 Apr 2016 15:20:23 +0200
+
+glmark2 (2014.03+git20150611.fa71af2d-0ubuntu2) wily; urgency=medium
+
+  * No-change rebuild against latest Mir
+
+ -- Christopher James Halse Rogers <raof@ubuntu.com>  Thu, 02 Jul 2015 15:21:13 +1000
+
+glmark2 (2014.03+git20150611.fa71af2d-0ubuntu1) wily; urgency=medium
+
+  [ Alexandros Frantzis ]
+  * Import latest version from upstream git (fa71af2d).
+  * debian/control:
+    - Build depend on libmirclient-dev >= 0.13.
+    - Update Standards-Version to 3.9.6.
+  * debian/rules:
+    - Build glmark2 without -Werror.
+
+  [ Christopher James Halse Rogers ]
+  * debian/control:
+  * debian/rules:
+    - Drop architecture restrictions on libmirclient build-dep.
+      Mir is now built for all architectures.
+
+ -- Christopher James Halse Rogers <raof@ubuntu.com>  Fri, 12 Jun 2015 17:58:39 +1000
+
+glmark2 (2014.03-0ubuntu3) utopic; urgency=medium
+
+  * A no-change rebuild against latest Mir.
+
+ -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@canonical.com>  Wed, 02 Jul 2014 18:32:25 +0200
+
+glmark2 (2014.03-0ubuntu2) utopic; urgency=medium
+
+  * Only build the mir variant on amd64, arm64, armhf, and i386.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 May 2014 09:37:16 +0200
+
+glmark2 (2014.03-0ubuntu1) utopic; urgency=medium
+
+  [ Alexandros Frantzis ]
+  * New upstream release 2014.03.
+  * debian/control:
+    - Update Standards-Version to 3.9.5.
+    - Add binary packages for wayland, mir and drm variants.
+  * debian/rules:
+    - Build wayland, mir and drm variants.
+    - Programatically create .install and .manpages files for
+      variant binary packages.
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@canonical.com>  Thu, 08 May 2014 23:42:01 -0300
+
+glmark2 (2012.08-0ubuntu2) quantal; urgency=low
+
+  * debian/patches/update-handle-api-change-glx_ext_swap_control.patch:
+    - Fixing FTBFS with latest mesa due api change (LP: #1040895)
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@linaro.org>  Sat, 25 Aug 2012 23:35:30 -0300
+
+glmark2 (2012.08-0ubuntu1) quantal; urgency=low
+
+  * New upstream release 2012.08 (LP: #1039736)
+    - Avoid crashing if gl used is not >= 2.0 (LP: #842279)
+  * Bumping dh compatibility level to v9
+  * debian/control:
+    - Update Standards-Version to 3.9.3.
+    - Add libjpeg-dev build dependency.
+    - Use libegl1-x11-dev as an build-dep alternative instead of libegl1-dev.
+    - Update description of glmark2-data binary package.
+  * debian/copyright:
+    - Refresh copyright based on the current upstrem version
+  * debian/rules:
+    - Clean compiled python code from unpacked waflib/ directory, as
+      described in http://wiki.debian.org/UnpackWaf
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@linaro.org>  Tue, 21 Aug 2012 15:38:09 -0300
+
+glmark2 (2011.09-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release 2011.09.
+  * debian/control:
+    - Start the description of the glmark2-data package with
+      a lowercase letter.
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Thu, 22 Sep 2011 11:32:17 +0300
+
+glmark2 (2011.08-0~linaro1) oneiric; urgency=low
+
+  * New upstream release 2011.08.
+  * debian/copyright:
+    - Add copyright information for src/libpng.
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Fri, 19 Aug 2011 00:49:08 +0300
+
+glmark2 (2011.07-0~linaro1) oneiric; urgency=low
+
+  * New upstream release 2011.07.
+  * debian/copyright:
+    - Use a standalone license paragraph for the GPL3+ license text.
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Thu, 21 Jul 2011 12:19:15 +0300
+
+glmark2 (2011.06-0~linaro1) oneiric; urgency=low
+
+  * New upstream release 2011.06.
+  * debian/copyright:
+    - Added copyright information for src/libmatrix/*
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Fri, 24 Jun 2011 14:54:40 +0300
+
+glmark2 (11.05-0~linaro1) natty; urgency=low
+
+  * New upstream release 11.05.
+  * debian/control:
+    - Change maintainer to "Alexandros Frantzis".
+    - Update Standards-Version to 3.9.2
+    - Use python (>= 2.4) as a build-dependency instead of explicitly
+      stating alternative python versions.
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Mon, 30 May 2011 14:07:36 +0300
+
+glmark2 (11.01-0ubuntu1) natty; urgency=low
+
+  * New upstream version 11.01 (LP: #707492).
+  * debian/rules:
+    - Use the new --enable-glesv2, --enable-gl configure flags.
+  * debian/copyright:
+    - Update copyright.
+    - Change main source license to GPL-3+ (from GPL-3).
+  * debian/control:
+    - Change maintainer to "Linaro Graphics Working Group".
+  * debian/watch:
+    - Add watch file.
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Tue, 25 Jan 2011 17:53:50 +0200
+
+glmark2 (10.07.1-0ubuntu1) maverick; urgency=low
+
+  * Initial release for linaro/maverick (LP: #605901)
+    - see: https://blueprints.launchpad.net/ubuntu/+spec/arm-m-ui-and-test-heads
+
+ -- Alexandros Frantzis <alexandros.frantzis@linaro.org>  Wed, 28 Jul 2010 18:22:35 +0300

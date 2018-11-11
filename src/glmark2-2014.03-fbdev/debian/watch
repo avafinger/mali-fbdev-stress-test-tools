@@ -1,0 +1,2 @@
+version=3
+http://launchpad.net/glmark2/+download http://launchpad.net/glmark2/trunk/.*/\+download/glmark2-(.*)\.tar\.gz

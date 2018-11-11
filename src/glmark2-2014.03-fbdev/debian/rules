@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
+
+# FLAVORS:=x11-gl,x11-glesv2,wayland-gl,wayland-glesv2
+# FLAVORS:=$(FLAVORS),mir-gl,mir-glesv2
+# FLAVORS:=$(FLAVORS),drm-gl,drm-glesv2
+FLAVORS:=fbdev-glesv2
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	./waf configure --with-flavors=$(FLAVORS) --prefix=/usr --no-werror --with-mali
+
+override_dh_auto_build:
+	./waf
+
+override_dh_auto_install:
+	./waf install --destdir=debian/tmp
+
+override_dh_auto_clean:
+	./waf distclean
+	# Clean compiled python code from unpacked waflib/ directory, as
+	# described in http://wiki.debian.org/UnpackWaf .
+	-find waflib -name "*.pyc" -delete
+
+override_dh_install:
+	sh debian/create_package_install_files.sh
+	dh_install
+
+override_dh_installman:
+	sh debian/create_package_manpages_files.sh
+	dh_installman

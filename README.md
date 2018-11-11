@@ -22,7 +22,7 @@ glmark2 is an OpenGL 2.0 and ES 2.0 benchmark ported to framebuffer (fbdev)
 | mali gpu ver. (kernel) |Mali-T86x MP4 r2p0 0x0860      |Mali-T72x MP2 r1p1 0x0720      |                               |      TBC                      |
 | yagears-fbdev          |60 FPS / 1920x1080 surface size|11 FPS / 1920x1080 surface size|46 FPS / 1920x1080 surface size|      NA                       |
 | yagears-x11            |58 FPS / 1920x1080 surface size|      NA                       |      NA                       |      TBC                      |
-| glmark2-2014.03-fbdev  |       55 (score)              |      TBC                      |      TBC                      |      TBC                      |
+| glmark2-2014.03-fbdev  |       55 (score) 1920x1080    |      10 (score) 1920x1080     |      43 (score) 1920x1080     |      TBC                      |
 | glmark2-2014.03-x11    |       TBC                     |      NA                       |      NA                       |      NA                       |
 
 ps: For some weird reason, the mali performance was poor on the OrangePi H6 Plus, i tried to increase CMA memory but that did not help.
@@ -52,9 +52,24 @@ You can use the keyboard to change the view and camera position
 
 * glmark2-2014.03-fbdev
 
+bionic (arm64)
+
+	cd mali-fbdev-stress-test-tools/deb/arm64/bionic
+	sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
+	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb 
 
 
-        sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu4_arm64.deb 
+
+xenial (arm64)
+
+	cd mali-fbdev-stress-test-tools/deb/arm64/xenial
+	sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
+	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb
+
+
+run:
+
+
         sudo glmark2-es2-fbdev 
 
         
