@@ -19,7 +19,7 @@ glmark2 is an OpenGL 2.0 and ES 2.0 benchmark ported to framebuffer (fbdev)
 | cpu model              |      RK3399                   |      H6                       |      H2+                      |      A64                      |
 | cpu % usage            |     ~92.1% (yagears-fbdev avg)|     ~91.6% (yagears-fbdev avg)|      %                        |      %                        |
 | mali model             |      Mali-T860                |      Mali-T720                |      Mali-400                 |      Mali-400                 |
-| mali gpu ver. (kernel) |Mali-T86x MP4 r2p0 0x0860      |Mali-T72x MP2 r1p1 0x0720      |                               |      TBC                      |
+| mali gpu ver. (kernel) |Mali-T86x MP4 r2p0 0x0860      |Mali-T72x MP2 r1p1 0x0720      |    Mali-400 MP                |      TBC                      |
 | yagears-fbdev          |60 FPS / 1920x1080 surface size|11 FPS / 1920x1080 surface size|46 FPS / 1920x1080 surface size|      NA                       |
 | yagears-x11            |58 FPS / 1920x1080 surface size|      NA                       |      NA                       |      TBC                      |
 | glmark2-2014.03-fbdev  |       55 (score) 1920x1080    |      10 (score) 1920x1080     |      43 (score) 1920x1080     |      TBC                      |
