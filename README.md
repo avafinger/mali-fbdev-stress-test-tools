@@ -142,6 +142,7 @@ Please install all the dependencies first and then run in shell:
 	sudo dpkg-buildpackage -uc -us
 
 
+the packages will be built in /arm/temp/temp/mali-fbdev-stress-test-tools/src
 
 # Credits
 
