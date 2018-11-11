@@ -67,6 +67,13 @@ xenial (arm64)
 	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb
 
 
+xenial (armhf)
+
+	cd mali-fbdev-stress-test-tools/deb/armhf/xenial
+	sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
+	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_armhf.deb
+
+
 run:
 
 
@@ -125,7 +132,15 @@ output:
 
 # Building from source
 
-Build instructions are provided for Ubuntu 18.04
+Build instructions are provided for Ubuntu 18.04 (bionic) / Ubuntu 16.04 (xenial) and *arm64* and *armhf*
+
+Please install all the dependencies first and then run in shell:
+
+
+
+	cd mali-fbdev-stress-test-tools/src/glmark2-2014.03-fbdev
+	sudo dpkg-buildpackage -uc -us
+
 
 
 # Credits
