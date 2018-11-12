@@ -51,43 +51,43 @@ Before you run the tools you need to have a valid mali device running in framebu
 
     The mali on NanoPi M4 performs as good as my good old NVIDIA on Intel dual-core on X11:
 
-	 ./yagears -b gl-x11 -e glesv2
-	Gears demo: 60.11 fps
-	3.3.0 NVIDIA 304.135
-	3.30 NVIDIA via Cg compiler
-	GLX 1.4 (depth 24, red 8, green 8, blue 8, alpha 0)
+		 ./yagears -b gl-x11 -e glesv2
+		Gears demo: 60.11 fps
+		3.3.0 NVIDIA 304.135
+		3.30 NVIDIA via Cg compiler
+		GLX 1.4 (depth 24, red 8, green 8, blue 8, alpha 0)
+		
+		./yagears -b gl-x11 -e gl
+		Gears demo: 60.32 fps
+		3.3.0 NVIDIA 304.135
+		GLX 1.4 (depth 24, red 8, green 8, blue 8, alpha 0)
 	
-	./yagears -b gl-x11 -e gl
-	Gears demo: 60.32 fps
-	3.3.0 NVIDIA 304.135
-	GLX 1.4 (depth 24, red 8, green 8, blue 8, alpha 0)
-
-	the smoothed reendering (anti-aliased) is with:
-	./yagears-gui -t glut -e gl
+		the smoothed reendering (anti-aliased) is with:
+		./yagears-gui -t glut -e gl
 
 
 * glmark2-2014.03-fbdev
 
     bionic (arm64)
 
-	cd mali-fbdev-stress-test-tools/deb/arm64/bionic
-	sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
-	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb 
+		cd mali-fbdev-stress-test-tools/deb/arm64/bionic
+		sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
+		sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb 
 
 
 
     xenial (arm64)
 
-	cd mali-fbdev-stress-test-tools/deb/arm64/xenial
-	sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
-	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb
+		cd mali-fbdev-stress-test-tools/deb/arm64/xenial
+		sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
+		sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_arm64.deb
 
 
     xenial (armhf)
 
-	cd mali-fbdev-stress-test-tools/deb/armhf/xenial
-	sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
-	sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_armhf.deb
+		cd mali-fbdev-stress-test-tools/deb/armhf/xenial
+		sudo dpkg -i glmark2-data_2014.03+git20150611.fa71af2d-0ubuntu5_all.deb
+		sudo dpkg -i glmark2-es2-fbdev_2014.03+git20150611.fa71af2d-0ubuntu5_armhf.deb
 
 
     run:
