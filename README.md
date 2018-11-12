@@ -148,7 +148,8 @@ Before you run the tools you need to have a valid mali device running in framebu
 * glmark2-es2 Intel NVIDIA 340 X11 (as a reference)
 
 
-    output
+    output:
+
 
 
         sudo glmark2-es2 -s 1920x1080
