@@ -1,0 +1,101 @@
+commit 8373f67c5eaa719a3392eb3a10577c3284c20875
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Jul 15 10:35:47 2017 +0200
+
+    add FLTK, SFML and wxWidgets support, remove GTK+ with GtkGLExt support
+
+commit 616b9df03e826b141715d3c473f35212d5d3c1a1
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Mon Feb 29 21:47:53 2016 +0100
+
+    update ChangeLog
+
+commit 75c07c3d8891dbc0910200849866fc972ec9ad46
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Mon Feb 29 21:46:27 2016 +0100
+
+    add ambient color
+
+commit ec5a1347b34a91c275ce6670bc92292ab5a22fe1
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Jan 9 15:50:48 2016 -0500
+
+    update ChangeLog
+
+commit 7a596fc3b307a737ab0ee42a6dfe2b75644c24a9
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Jan 9 15:45:16 2016 -0500
+
+    add DRM support, add Mosaic with GLUT support, add texture with PNG and TIFF image
+
+commit 4cdf7f2eab38411969a713a13b7ced0d9c947875
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Tue Dec 1 22:23:16 2015 +0100
+
+    update ChangeLog
+
+commit 605fff3252885fbaa0a7670e68122073efd8ce55
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Tue Dec 1 22:22:48 2015 +0100
+
+    add environment variable for x and y position, add texture with C-Source image
+
+commit ccdc358a9cb4966a981d0976e56ac9ae1833f5ab
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Tue Dec 1 22:19:01 2015 +0100
+
+    update ChangeLog
+
+commit 72e1b50de33bacafbcccf7b643417969916b37cb
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Tue Dec 1 22:18:21 2015 +0100
+
+    add environment variable for width and height, add GTK+ with GtkGlArea and SDL2 support
+
+commit 660ea64313eb81935b442180188fbc509117659e
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Tue Dec 1 22:10:55 2015 +0100
+
+    update ChangeLog
+
+commit c8f10638487b893a9c4432441369a61ebcf99bc6
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Tue Dec 1 22:08:13 2015 +0100
+
+    add Wayland support, add GUI (EFL, GLUT, GTK+ with GtkGLExt, Qt, SDL support)
+
+commit c33703c9a223d7ec71ac28c82a474dc16feb8c73
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Mar 21 20:58:43 2015 +0100
+
+    update ChangeLog
+
+commit 6a0945cf74d7d0ba06c5ff278c460e5913ec86ea
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Mar 21 20:58:18 2015 +0100
+
+    handle error
+
+commit 64c088eb9f780b938f0dee32d2582fd48cba9bea
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Mar 21 20:55:23 2015 +0100
+
+    update ChangeLog
+
+commit 5591d5bbe1a2d14b691a5349e32e0579d3914afd
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Mar 21 20:54:40 2015 +0100
+
+    add OpenGL ES 1.1 CM and 2.0 support, handle input event
+
+commit dcc38a0fe7685de8f7802f1077cbee980e5f2fbe
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Mar 21 20:50:35 2015 +0100
+
+    update ChangeLog
+
+commit fe22c917f22d7d517a42b4d7d28d8d1d6361aaaa
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Mar 21 20:49:39 2015 +0100
+
+    initial version

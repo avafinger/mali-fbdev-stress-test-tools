@@ -1,0 +1,29 @@
+Yet Another Gears OpenGL demo
+-----------------------------
+
+The yagears package contains a version of the popular gears OpenGL demo (with
+OpenGL ES 1.1 CM and 2.0 ports) that supports multiple graphic renderers:
+
+  - GLX interface (OpenGL Extension to the X Window System)
+  - DirectFBGL interface (OpenGL Extension for DirectFB)
+  - GLFBDev interface (OpenGL Extension to the Linux Framebuffer)
+  - EGL interface with X11 display
+  - EGL interface with DirectFB display
+  - EGL interface with Linux Framebuffer display
+  - EGL interface with Wayland display
+  - EGL interface with DRM display
+
+and multiple graphical user interfaces:
+
+  - EFL (Enlightenment Foundation Libraries)
+  - FLTK (Fast Light ToolKit)
+  - GLUT (OpenGL Utility Toolkit)
+  - GTK+ (Gimp ToolKit)
+  - Qt (Q toolkit)
+  - SDL (Simple Directmedia Layer)
+  - SFML (Simple and Fast Multimedia Library)
+  - wxWidgets (Windows X Widgets)
+
+Have fun,
+
+Nicolas Caramelli
