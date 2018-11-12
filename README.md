@@ -151,9 +151,11 @@ Before you run the tools you need to have a valid mali device running in framebu
     output:
 
 
-
         sudo glmark2-es2 -s 1920x1080
         libEGL warning: DRI2: failed to authenticate
+
+ 
+
 	=======================================================
 	    glmark2 2014.03+git20150611.fa71af2d
 	=======================================================
