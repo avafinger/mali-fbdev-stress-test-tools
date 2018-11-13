@@ -15,7 +15,7 @@ yagears is a version of the popular gears OpenGL ES 2.0 demo ported to framebuff
 # glmark2-2014.03-fbdev
 glmark2 is an OpenGL 2.0 and ES 2.0 benchmark ported to framebuffer (fbdev)
 
-![glmark2-2014.03-fbdev.png screenshot 1](https://github.com/avafinger/mali-fbdev-stress-test-tools/raw/master/img/glmark2-2014.03-fbdev.png.png)
+![glmark2-2014.03-fbdev.png screenshot 1](https://github.com/avafinger/mali-fbdev-stress-test-tools/raw/master/img/glmark2-2014.03-fbdev.png)
 
 # Benchmark samples (for reference)
 
