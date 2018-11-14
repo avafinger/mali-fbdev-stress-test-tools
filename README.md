@@ -283,3 +283,9 @@ the packages will be built in /arm/temp/temp/mali-fbdev-stress-test-tools/src
 
 # Credits
 
+FriendlyElec and Nora Lee for the samples
+Steven for some shipping arrangments
+Jernejsk for the Mali user space (OrangePi H6) 
+MRipard for the Mali on mainline kernel
+Khadas member team for the initial version
+
