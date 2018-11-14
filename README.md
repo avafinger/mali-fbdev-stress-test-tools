@@ -29,9 +29,10 @@ glmark2 is an OpenGL 2.0 and ES 2.0 benchmark ported to framebuffer (fbdev)
 | yagears-fbdev          |60 FPS / 1920x1080 surface size|11 FPS / 1920x1080 surface size|59 FPS / 1920x1080 surface size|      TBC                       |
 | yagears-x11            |58 FPS / 1920x1080 surface size|      NA                       |      NA                       |      TBC                      |
 | glmark2-2014.03-fbdev  |       55 (score) 1920x1080    |      10 (score) 1920x1080     |      45 (score) 1920x1080     |      TBC                      |
-| glmark2-2014.03-x11    |       TBC                     |      NA                       |      NA                       |      NA                       |
+| glmark2-2014.03-x11    |       47 (score) 1920x1080 *  |      NA                       |      NA                       |      NA                       |
 
 ps: For some weird reason, the mali performance was poor on the OrangePi H6 Plus, i tried to increase CMA memory but that did not help.
+* kernel 4.4.143 (FE)
 
 # Running the tools on mali framebuffer setup
 
@@ -150,6 +151,54 @@ Before you run the tools you need to have a valid mali device running in framebu
                                           glmark2 Score: 55 
         =======================================================
 
+
+    output X11 (FriendlyElec Image):
+
+	glmark2-es2 -s 1920x1080
+	=======================================================
+	    glmark2 2014.03+git20150611.fa71af2d
+	=======================================================
+	    OpenGL Information
+	    GL_VENDOR:     ARM
+	    GL_RENDERER:   Mali-T860
+	    GL_VERSION:    OpenGL ES 3.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+	=======================================================
+	[build] use-vbo=false: FPS: 45 FrameTime: 22.222 ms
+	[build] use-vbo=true: FPS: 42 FrameTime: 23.810 ms
+	[texture] texture-filter=nearest: FPS: 49 FrameTime: 20.408 ms
+	[texture] texture-filter=linear: FPS: 59 FrameTime: 16.949 ms
+	[texture] texture-filter=mipmap: FPS: 50 FrameTime: 20.000 ms
+	[shading] shading=gouraud: FPS: 59 FrameTime: 16.949 ms
+	[shading] shading=blinn-phong-inf: FPS: 30 FrameTime: 33.333 ms
+	[shading] shading=phong: FPS: 30 FrameTime: 33.333 ms
+	[shading] shading=cel: FPS: 59 FrameTime: 16.949 ms
+	[bump] bump-render=high-poly: FPS: 59 FrameTime: 16.949 ms
+	[bump] bump-render=normals: FPS: 60 FrameTime: 16.667 ms
+	[bump] bump-render=height: FPS: 60 FrameTime: 16.667 ms
+	[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 60 FrameTime: 16.667 ms
+	[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 30 FrameTime: 33.333 ms
+	[pulsar] light=false:quads=5:texture=false: FPS: 59 FrameTime: 16.949 ms
+	[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 29 FrameTime: 34.483 ms
+	[desktop] effect=shadow:windows=4: FPS: 59 FrameTime: 16.949 ms
+	[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 19 FrameTime: 52.632 ms
+	[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 18 FrameTime: 55.556 ms
+	[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 17 FrameTime: 58.824 ms
+	[ideas] speed=duration: FPS: 42 FrameTime: 23.810 ms
+	[jellyfish] <default>: FPS: 45 FrameTime: 22.222 ms
+	[terrain] <default>: FPS: 14 FrameTime: 71.429 ms
+	[shadow] <default>: FPS: 59 FrameTime: 16.949 ms
+	[refract] <default>: FPS: 29 FrameTime: 34.483 ms
+	[conditionals] fragment-steps=0:vertex-steps=0: FPS: 59 FrameTime: 16.949 ms
+	[conditionals] fragment-steps=5:vertex-steps=0: FPS: 59 FrameTime: 16.949 ms
+	[conditionals] fragment-steps=0:vertex-steps=5: FPS: 59 FrameTime: 16.949 ms
+	[function] fragment-complexity=low:fragment-steps=5: FPS: 60 FrameTime: 16.667 ms
+	[function] fragment-complexity=medium:fragment-steps=5: FPS: 60 FrameTime: 16.667 ms
+	[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 60 FrameTime: 16.667 ms
+	[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 60 FrameTime: 16.667 ms
+	[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 59 FrameTime: 16.949 ms
+	=======================================================
+	                                  glmark2 Score: 47 
+	=======================================================
 
 * glmark2-es2 Intel NVIDIA 340 X11 (as a reference)
 
