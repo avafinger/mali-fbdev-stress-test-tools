@@ -288,4 +288,4 @@ Steven for some shipping arrangments
 Jernejsk for the Mali user space (OrangePi H6) 
 MRipard for the Mali on mainline kernel
 Khadas member team for the initial version
-
+Armbian for otimization/overclocking
